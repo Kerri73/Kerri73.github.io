@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta name="description"
         content="Backyard Bomb Squad provides pet waste removal in Ogden, Roy, Layton, and surrounding Utah communities. Plan your cleanup mission and request a quote.">
@@ -10,8 +9,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-
-
 <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="yard-header">
@@ -19,7 +16,6 @@
             <a href="#home" class="yard-logo">
                 <img src="images/logo.png" alt="Backyard Bomb Squad — A Pet Waste Removal Company">
             </a>
-
             <nav aria-label="Main navigation">
                 <a href="#home">Home</a>
                 <a href="#services">Services</a>
@@ -29,36 +25,26 @@
                 <a href="#contact">Contact</a>
             </nav>
         </div>
-
         <div class="yard-banner">
             <div class="yard-copy">
                 <h1>Your Dog Drops It.<br>
                     <span>We Defuse It.</span>
                 </h1>
-
                 <p>A cleaner yard. More time for the good stuff.</p>
-
                 <a href="#cleanup-mission" class="yard-quote">
                     Plan My Cleanup Mission →
                 </a>
             </div>
-
-            <div class="yard-paws">
-                <p class="paws-bubble">
-                    Hi! I’m Paws McClean.<br>
-                    Ready for a cleaner yard?
-                </p>
-
+            <div class="yard-paws" id="paws-visitor">
+                <p class="paws-bubble" hidden>Paws McClean reporting for doody! 🐾</p>
                 <button id="talking-paws" type="button">
-                    <img src="images/paws-header.png" alt="Paws McClean kneeling with his cleanup scoop">
+                    <div class="paws-walk-stage"><div class="paws-visitor-sprite" role="img" aria-label="Paws McClean walks onto the lawn, stops and waves"></div></div>
                     <span>🔊 Meet Paws McClean!</span>
                 </button>
-
                 <p id="paws-message" aria-live="polite"></p>
             </div>
         </div>
     </header>
-
     <main id="main-content">
         <section id="home">
             <h2>Welcome to Backyard Bomb Squad! 🐾💣</h2>
@@ -66,54 +52,44 @@
                 <strong>🐾 LAND MINE FREE ZONE*</strong>
                 <span>*Until your dog clocks back in.</span>
             </div>
-
             <p>
                 <strong>Life’s too short to spend it scooping poop!</strong>
                 We take the dirty work off your hands so you can get
                 back to enjoying your yard—without watching every step!
             </p>
-
             <p>
                 Serving Ogden, Roy, Layton, and surrounding Utah
                 communities, we provide reliable, affordable dog waste
                 removal. Whether you have one furry troublemaker or
                 a whole squad, we’ve got your backyard covered!
             </p>
-
             <p>
                 <strong>
                     Say goodbye to land mines and hello to good times!
                 </strong>
             </p>
-
             <a href="#contact" class="book-button">
                 Book Your Cleanup Today!
             </a>
         </section>
         <!-- OUR SERVICES SECTION -->
         <section id="services">
-
             <div class="peek-heading">
                 <img src="images/paws-peeking.png" class="peeking-paws" alt="">
                 <h2>Our Services</h2>
             </div>
             <h3>Your Dog Drops It.<br>We Defuse It! 💣🐾</h3>
-
             <p>
                 We love dogs. Their little backyard surprises?
                 Not so much!
             </p>
-
             <p>
                 At Backyard Bomb Squad, we're on a mission
                 to keep your yard clean, fresh, and free
                 of unexpected land mines!
             </p>
-
             <!-- FOUR SERVICE BOXES -->
             <div class="services-grid">
-
-
                 <!-- WEEKLY CLEANUP -->
                 <div class="service-card">
                     <img src="images/weekly-calendar.png" alt="Calendar with a paw-print checkmark">
@@ -125,12 +101,10 @@
                         enjoy your yard without watching every step!
                     </p>
                 </div>
-
                 <!-- ONE-TIME CLEANUP -->
                 <div class="service-card">
                     <img src="images/Pet waste scoop with tied green bag-3.png" alt="Cleanup scoop and waste bag">
                     <h3>One-Time Bomb Disposal</h3>
-
                     <p>
                         Has your backyard become a disaster zone?
                         Whether you're preparing for a party or
@@ -138,12 +112,10 @@
                         reclaim your territory!
                     </p>
                 </div>
-
                 <!-- MULTI-DOG CLEANUP -->
                 <div class="service-card">
                     <img src="images/three-dogs.png" alt="Three friendly dogs">
                     <h3>Multi-Dog Cleanup</h3>
-
                     <p>
                         More dogs mean more love, more laughs,
                         and unfortunately, more poop!
@@ -151,12 +123,10 @@
                         your entire furry squad!
                     </p>
                 </div>
-
                 <!-- INITIAL YARD RESCUE -->
                 <div class="service-card">
                     <img src="images/yard-rescue.png" alt="Backyard before and after cleanup">
                     <h3>Initial Yard Rescue</h3>
-
                     <p>
                         When the poop has piled up and the
                         mission feels impossible, call in
@@ -165,14 +135,12 @@
                     </p>
                 </div>
             </div>
-
         </section>
         <!-- CLEANUP MISSION PLANNER -->
         <section id="cleanup-mission">
             <p class="mission-label">🐾 Your yard. Our mission.</p>
             <h2>Plan Your Cleanup Mission!</h2>
             <p>Tell us about your backyard. We’ll help handle the land mines!</p>
-
             <div class="mission-options">
                 <label for="mission-yard">
                     Your yard size
@@ -183,7 +151,6 @@
                         <option value="extra">Extra large — over 1 acre</option>
                     </select>
                 </label>
-
                 <label for="mission-dogs">
                     Your furry squad
                     <select id="mission-dogs">
@@ -192,7 +159,6 @@
                         <option value="3">3 or more dogs</option>
                     </select>
                 </label>
-
                 <label for="mission-frequency">
                     Your patrol schedule
                     <select id="mission-frequency">
@@ -202,27 +168,22 @@
                     </select>
                 </label>
             </div>
-
             <div class="mission-result" aria-live="polite">
                 <p>Your mission estimate</p>
                 <strong id="mission-price">Choose your mission options</strong>
                 <p id="mission-note">Call or text us if an estimate does not appear.</p>
             </div>
-
             <a id="mission-text" class="mission-deploy" href="sms:+13852896637">
                 Text Us My Mission! →
             </a>
-
             <p class="mission-fine-print">
                 This is an estimate. We’ll confirm your price before booking.
                 A first-time heavy cleanup may add $20–$50 if needed.
             </p>
         </section>
         <section id="pricing">
-
             <h2>Weekly Mission Pricing</h2>
             <p>Affordable Backyard Bomb Disposal!</p>
-
             <div class="pricing-table-wrap">
                 <table class="pricing-table">
                     <caption>Prices per visit for weekly service</caption>
@@ -233,26 +194,22 @@
                             <th scope="col">2 Dogs</th>
                         </tr>
                     </thead>
-
                     <tbody>
                         <tr>
                             <td>Small<br><small>Up to ¼ acre</small></td>
                             <td>$15</td>
                             <td>$20</td>
                         </tr>
-
                         <tr>
                             <td>Medium<br><small>Over ¼–½ acre</small></td>
                             <td>$20</td>
                             <td>$25</td>
                         </tr>
-
                         <tr>
                             <td>Large<br><small>Over ½–1 acre</small></td>
                             <td>$25</td>
                             <td>$30</td>
                         </tr>
-
                         <tr>
                             <td>Extra Large<br><small>Over 1 acre</small></td>
                             <td>Starting at $40</td>
@@ -261,77 +218,59 @@
                     </tbody>
                 </table>
             </div>
-
             <h3 class="mission-heading">
                 Pick Your Patrol
                 <span>Service Frequency &amp; Additional Fees</span>
             </h3>
-
             <div class="pricing-extras">
-
                 <div class="pricing-extra">
                     <img src="images/paws-weekly.png" class="fee-mascot" alt="Paws McClean with a weekly calendar">
                     <h4>Weekly Poop Patrol</h4>
                     <p>Standard pricing — our best value!</p>
                 </div>
-
                 <div class="pricing-extra">
                     <img src="images/paws-biweekly.png" class="fee-mascot"
                         alt="Paws McClean pointing to two calendar dates">
                     <h4>Every Other Week</h4>
                     <p>Add $10 per visit.</p>
                 </div>
-
                 <div class="pricing-extra">
                     <img src="images/paws-onetime.png" class="fee-mascot"
                         alt="Paws McClean holding a cleanup scoop and waste bag">
                     <h4>One-Time Bomb Disposal</h4>
                     <p>Starting at $50, based on yard condition.</p>
                 </div>
-
                 <div class="pricing-extra">
-
-
                     <img src="images/paws-heavy.png" class="fee-mascot"
                         alt="Paws McClean with a cleanup scoop and bucket">
                     <h4>First-Time Heavy Cleanup</h4>
                     <p>Additional $20–$50 if needed.</p>
                 </div>
-
             </div>
-
             <h3>Don't Step in It. We've Got Your Back!</h3>
-
             <a href="tel:+13852896637" class="book-button">
                 Call to Book: (385) 289-6637
             </a>
-
         </section>
         <!-- END PRICING SECTION -->
         <!-- WHY CHOOSE US -->
         <div class="why-us">
-
             <h2>Why Call the Bomb Squad?</h2>
-
             <p>
                 Because your time is better spent playing
                 fetch, grilling burgers, or relaxing in
                 the sunshine — not dodging doggie deposits!
             </p>
-
             <p>
                 <strong>
                     Proudly serving Ogden, Roy, Layton,
                     and surrounding Utah communities.
                 </strong>
             </p>
-
         </div> <!-- Ends Why Choose Us -->
         <section id="our-story">
             <div class="story-intro">
                 <img src="images/paws-peeking.png" alt="" class="story-paws">
-
-
                 <p class="story-eyebrow">Our Story</p>
                 <h2>Meet the Humans Behind the Squad</h2>
                 <figure class="founders-photo">
@@ -342,18 +281,15 @@
                 </figure>
                 <p class="story-caption">“They scoop. I supervise.” — Paws McClean</p>
             </div>
-
             <div class="story-content">
                 <p class="story-lead">
                     Less time scooping. More time enjoying life with your dogs.
                 </p>
-
                 <p>
                     Backyard Bomb Squad was created from a simple idea:
                     helping people spend less time worrying about pet waste
                     and more time enjoying life with their dogs.
                 </p>
-
                 <p>
                     As passionate animal lovers, we know pets are family.
                     We also know that cleaning up the backyard is one of
@@ -361,7 +297,6 @@
                     busy schedules, work, and everyday life, it’s a chore
                     that’s easy to put off.
                 </p>
-
                 <p>
                     That’s why we started Backyard Bomb Squad—to create
                     cleaner, safer, and more enjoyable outdoor spaces for
@@ -369,17 +304,14 @@
                     more time to play, relax, entertain, and make memories
                     without watching every step.
                 </p>
-
                 <p>
                     We’re proud to do the dirty work so you don’t have to,
                     giving you more time to enjoy the moments that matter
                     most with your pets.
                 </p>
-
                 <p class="story-signature">Kerri &amp; Joel<br>
                     <span>The humans behind Backyard Bomb Squad</span>
                 </p>
-
                 <a href="#cleanup-mission" class="book-button">
                     Plan Your Cleanup Mission →
                 </a>
@@ -388,7 +320,6 @@
         <section id="ask-paws">
             <h2>Got Questions? Ask Paws! 🐾</h2>
             <p>A little mission briefing before we get scooping.</p>
-
             <details>
                 <summary>Where does the Bomb Squad patrol?</summary>
                 <p>
@@ -396,7 +327,6 @@
                     communities. Contact us to confirm service at your address!
                 </p>
             </details>
-
             <details>
                 <summary>Can I book just one cleanup?</summary>
                 <p>
@@ -404,7 +334,6 @@
                     Your final quote depends on your yard’s size and condition.
                 </p>
             </details>
-
             <details>
                 <summary>What if I have a whole squad of dogs?</summary>
                 <p>
@@ -412,7 +341,6 @@
                     For three or more dogs, contact us for a custom quote.
                 </p>
             </details>
-
             <details>
                 <summary>How do I deploy the squad?</summary>
                 <p>
@@ -426,24 +354,19 @@
         <section id="contact">
             <h2>Ready for a Cleaner Yard?</h2>
             <p>Call or text us to book your cleanup!</p>
-
             <a href="tel:+13852896637" class="book-button">
                 Call (385) 289-6637
             </a>
-
             <a href="sms:+13852896637" class="book-button">
                 Text Us
             </a>
         </section>
-
     </main>
     <footer>
         <img src="images/mascot.png" class="footer-mascot" alt="Paws McClean, your backyard cleanup helper">
-
         <h3>Leave No Land Mine Behind!</h3>
         <p>Your yard deserves better. Your shoes do, too!</p>
     </footer>
-
     <script>
         /* Recorded Paws greeting. */
         (function () {
@@ -455,7 +378,6 @@
             recording.preload = "none";
             let playing = false;
             let request = 0;
-
             function resetPaws() {
                 playing = false;
                 label.textContent = "🔊 Meet Paws McClean!";
@@ -490,7 +412,6 @@
             });
         })();
     </script>
-
     <script>
         /* Mission estimate and prepared text message. Prices are per visit. */
         (function () {
@@ -501,13 +422,11 @@
             const note = document.getElementById("mission-note");
             const textButton = document.getElementById("mission-text");
             if (!yard || !dogs || !frequency || !price || !note || !textButton) return;
-
             const weeklyPrices = {
                 small: { 1: 15, 2: 20 },
                 medium: { 1: 20, 2: 25 },
                 large: { 1: 25, 2: 30 }
             };
-
             function updateMission() {
                 let estimate;
                 let explanation;
@@ -550,6 +469,6 @@
             updateMission();
         })();
     </script>
+<script src="paws-entrance.js" defer></script>
 </body>
-
 </html>

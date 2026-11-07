@@ -1,0 +1,12 @@
+PAWS ON THE LAWN — WEBSITE UPDATE
+
+1. Back up your current website folder.
+2. Replace index.html and style.css with these updated files.
+3. Add or replace paws-entrance.js beside index.html.
+4. Copy images/paws-sprite.png into your existing images folder.
+5. Keep all other images and audio files, including images/header-yard.png.
+6. Refresh your Live Server preview.
+
+Paws now replaces the scooping mascot in your lawn header. He enters from the left, stops, waves and shows his greeting. Click him or the Meet Paws button to play your existing voice greeting. The floating corner character is removed. Reduced-motion visitors see the final greeting pose.
+
+This update uses your existing lawn background and website design. The concept preview was illustrative; its new scenery is not included. Other site images and audio are not included. Code paths checked; visual browser verification remains to be done in Live Server.

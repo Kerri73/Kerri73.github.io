@@ -1,0 +1,18 @@
+.paws-walk-stage { position: relative; }
+.paws-visitor-sprite.paws-cleanup {
+  background-image: url("images/paws-cleanup.png");
+  background-size: 300% 100%;
+}
+.paws-walk-stage .paws-cleanup-pile {
+  position: absolute;
+  left: 85%;
+  z-index: 2;
+  bottom: 6%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  box-shadow: none;
+  font: clamp(24px, 4vw, 34px)/1 sans-serif;
+  pointer-events: none;
+}

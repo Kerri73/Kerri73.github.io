@@ -3,9 +3,11 @@
 * {
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -16,14 +18,17 @@ body {
     background-image: radial-gradient(circle, rgba(140, 198, 63, .15) 1px, transparent 1px);
     background-size: 24px 24px;
 }
+
 img {
     max-width: 100%;
     height: auto;
 }
+
 a {
     color: #315c16;
     text-underline-offset: 3px;
 }
+
 a:focus-visible,
 button:focus-visible,
 select:focus-visible,
@@ -31,12 +36,14 @@ summary:focus-visible {
     outline: 3px solid #1758a1;
     outline-offset: 4px;
 }
+
 h1,
 h2,
 h3,
 h4 {
     line-height: 1.2;
 }
+
 .skip-link {
     position: absolute;
     top: -100px;
@@ -45,9 +52,11 @@ h4 {
     background: white;
     z-index: 10;
 }
+
 .skip-link:focus {
     top: 12px;
 }
+
 .book-button,
 .yard-quote,
 .mission-deploy {
@@ -62,17 +71,20 @@ h4 {
     text-align: center;
     min-height: 48px;
 }
+
 .book-button:hover,
 .yard-quote:hover,
 .mission-deploy:hover {
     background: #22420e;
 }
+
 /* White navigation bar and compact yard banner */
 header.yard-header {
     padding: 0;
     background: white;
     border-bottom: 4px solid #8cc63f;
 }
+
 .yard-nav {
     display: flex;
     align-items: center;
@@ -82,21 +94,25 @@ header.yard-header {
     margin: auto;
     padding: 8px 25px;
 }
+
 .yard-logo {
     flex: 0 1 320px;
     min-width: 0;
 }
+
 .yard-logo img {
     display: block;
     width: 320px;
     height: auto;
 }
+
 .yard-header nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 12px 20px;
 }
+
 .yard-header nav a {
     color: #202020;
     font-size: 18px;
@@ -104,10 +120,12 @@ header.yard-header {
     text-decoration: none;
     padding: 8px 0;
 }
+
 .yard-header nav a:hover {
     color: #315c16;
     text-decoration: underline;
 }
+
 .yard-banner {
     display: grid;
     grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
@@ -116,10 +134,12 @@ header.yard-header {
     padding: 15px max(25px, calc((100% - 1150px) / 2)) 8px;
     background: #f3f8eb url("images/header-yard.png") center bottom / cover no-repeat;
 }
+
 .yard-copy {
     text-align: left;
     align-self: center;
 }
+
 .yard-copy h1 {
     margin: 0 0 10px;
     color: #111;
@@ -129,9 +149,11 @@ header.yard-header {
     line-height: 1.12;
     letter-spacing: -1px;
 }
+
 .yard-copy h1 span {
     color: #397e0c;
 }
+
 .yard-copy p {
     color: #111;
     font-size: 20px;
@@ -139,16 +161,19 @@ header.yard-header {
     line-height: 1.5;
     margin: 8px 0;
 }
+
 .yard-quote {
     margin-top: 12px;
     border: 3px solid white;
     font-size: 19px;
     box-shadow: 0 4px 12px #315c1633;
 }
+
 .yard-paws {
     text-align: center;
     min-width: 0;
 }
+
 .paws-bubble {
     display: inline-block;
     margin: 0 0 5px;
@@ -161,6 +186,7 @@ header.yard-header {
     font-weight: bold;
     line-height: 1.4;
 }
+
 #talking-paws {
     display: block;
     width: 100%;
@@ -171,6 +197,7 @@ header.yard-header {
     cursor: pointer;
     font: inherit;
 }
+
 #talking-paws img {
     display: block;
     width: 100%;
@@ -184,6 +211,7 @@ header.yard-header {
     animation: none;
     transform: none;
 }
+
 #talking-paws span {
     display: inline-block;
     position: relative;
@@ -195,12 +223,15 @@ header.yard-header {
     color: white;
     font: bold 16px/1.4 Arial, sans-serif;
 }
+
 #paws-message:empty {
     display: none;
 }
+
 #paws-message {
     font-size: 16px;
 }
+
 /* Consistent section spacing */
 #home,
 #services,
@@ -210,15 +241,18 @@ header.yard-header {
     padding: 25px 4%;
     text-align: center;
 }
+
 #home,
 .why-us,
 #contact {
     background: rgba(255, 255, 255, .8);
 }
+
 #services,
 #pricing {
     background: rgba(240, 247, 229, .85);
 }
+
 #home>p,
 #services>p,
 #pricing>p,
@@ -229,6 +263,7 @@ header.yard-header {
     font-size: 18px;
     line-height: 1.6;
 }
+
 #home h2,
 #services h2,
 #pricing h2,
@@ -240,6 +275,7 @@ header.yard-header {
     font-weight: 800;
     text-align: center;
 }
+
 #home h2::after,
 #services h2::after,
 #pricing h2::after,
@@ -254,16 +290,20 @@ header.yard-header {
     border-radius: 4px;
     margin: 14px auto 0;
 }
+
 #home .book-button {
     margin: 15px auto;
 }
+
 #contact .book-button {
     margin: 8px;
 }
+
 /* Peeking Paws and the four main services */
 .peek-heading {
     text-align: center;
 }
+
 .peeking-paws {
     display: block;
     width: 120px;
@@ -272,11 +312,13 @@ header.yard-header {
     position: relative;
     z-index: 1;
 }
+
 .peek-heading h2 {
     position: relative;
     padding-top: 12px;
     border-top: 3px solid #8cc63f;
 }
+
 .services-grid,
 .pricing-extras {
     display: grid;
@@ -287,6 +329,7 @@ header.yard-header {
     max-width: 1150px;
     margin: 18px auto;
 }
+
 .service-card {
     background: white;
     border: 3px solid #8cc63f;
@@ -295,6 +338,7 @@ header.yard-header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
     min-width: 0;
 }
+
 .service-card img {
     display: block;
     width: 100%;
@@ -303,11 +347,13 @@ header.yard-header {
     object-fit: contain;
     margin: 0 auto 10px;
 }
+
 .service-card h3 {
     color: #315c16;
     font-size: 22px;
     margin: 10px 0;
 }
+
 .service-card p,
 .pricing-extra p {
     margin: 10px 0;
@@ -315,6 +361,7 @@ header.yard-header {
     font-size: 18px;
     line-height: 1.6;
 }
+
 /* Weekly prices and Pick Your Patrol cards */
 .pricing-table-wrap {
     width: 100%;
@@ -322,22 +369,26 @@ header.yard-header {
     margin: 18px auto;
     overflow-x: auto;
 }
+
 .pricing-table {
     width: 100%;
     border-collapse: collapse;
     background: white;
 }
+
 .pricing-table caption {
     padding: 10px;
     font-size: 16px;
     color: #444;
 }
+
 .pricing-table th {
     background: #4d8c0b;
     color: white;
     padding: 15px;
     font-size: 18px;
 }
+
 .pricing-table td {
     border: 1px solid #b4c9a0;
     padding: 18px 12px;
@@ -345,23 +396,28 @@ header.yard-header {
     font-weight: bold;
     color: #397e0c;
 }
+
 .pricing-table td:first-child {
     color: #222;
     text-align: left;
 }
+
 .pricing-table small {
     font-size: 16px;
     font-weight: normal;
 }
+
 #pricing h3 {
     color: #315c16;
     margin-top: 35px;
 }
+
 #pricing .mission-heading {
     font-size: 32px;
     font-weight: 800;
     margin: 45px 0 25px;
 }
+
 .mission-heading span {
     display: block;
     font-size: 16px;
@@ -369,6 +425,7 @@ header.yard-header {
     color: #444;
     margin-top: 8px;
 }
+
 .pricing-extra {
     background: white;
     border: 2px solid #8cc63f;
@@ -377,11 +434,13 @@ header.yard-header {
     text-align: center;
     min-width: 0;
 }
+
 .pricing-extra h4 {
     color: #315c16;
     font-size: 22px;
     margin: 12px 0;
 }
+
 .pricing-extra .fee-mascot {
     display: block;
     width: 100%;
@@ -390,6 +449,7 @@ header.yard-header {
     object-fit: contain;
     margin: 0 auto 12px;
 }
+
 /* Interactive mission planner */
 #cleanup-mission {
     max-width: 1150px;
@@ -401,21 +461,25 @@ header.yard-header {
     text-align: center;
     scroll-margin-top: 20px;
 }
+
 #cleanup-mission h2 {
     margin: 8px 0 12px;
     color: #315c16;
     font-size: clamp(28px, 4vw, 38px);
 }
+
 .mission-label {
     color: #315c16;
     font-weight: bold;
 }
+
 .mission-options {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 18px;
     margin: 25px 0;
 }
+
 .mission-options label {
     color: #263520;
     font-size: 18px;
@@ -423,6 +487,7 @@ header.yard-header {
     text-align: left;
     min-width: 0;
 }
+
 .mission-options select {
     display: block;
     width: 100%;
@@ -436,25 +501,30 @@ header.yard-header {
     font: 17px Arial, sans-serif;
     cursor: pointer;
 }
+
 .mission-result {
     padding: 20px;
     border-radius: 16px;
     background: #e7f3d8;
 }
+
 .mission-result p {
     margin: 6px 0;
     color: #293d20;
 }
+
 #mission-price {
     display: block;
     color: #315c16;
     font-size: clamp(26px, 4vw, 40px);
     line-height: 1.3;
 }
+
 .mission-deploy {
     margin-top: 20px;
     font-size: 19px;
 }
+
 #cleanup-mission .mission-fine-print {
     max-width: 700px;
     margin: 15px auto 0;
@@ -462,21 +532,25 @@ header.yard-header {
     line-height: 1.5;
     color: #444;
 }
+
 /* Our story */
 #our-story {
     max-width: 1100px;
     margin: 30px auto;
     padding: 25px 4%;
 }
+
 .story-intro {
     text-align: center;
 }
+
 .story-paws {
     display: block;
-    width: 110px;
+    width: 170px;
     height: auto;
     margin: 0 auto -6px;
 }
+
 #our-story .story-eyebrow {
     margin: 0;
     padding-top: 12px;
@@ -487,23 +561,27 @@ header.yard-header {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
+
 #our-story h2 {
     margin: 10px 0;
     color: #315c16;
     font-size: clamp(28px, 4vw, 36px);
 }
+
 #our-story .story-caption {
     margin: 8px 0 20px;
     color: #526044;
     font-size: 16px;
     font-style: italic;
 }
+
 .story-content {
     padding: 25px;
     border: 2px solid #d8e8c5;
     border-radius: 20px;
     background: #fffef8;
 }
+
 .story-content p {
     max-width: 800px;
     margin: 0 auto 18px;
@@ -511,45 +589,54 @@ header.yard-header {
     line-height: 1.65;
     text-align: left;
 }
+
 .story-content .story-lead {
     color: #315c16;
     font-size: 23px;
     font-weight: bold;
 }
+
 .story-content .story-signature {
     color: #315c16;
     font-size: 22px;
     font-weight: bold;
 }
+
 .story-signature span {
     font-size: 15px;
     font-weight: normal;
 }
+
 .story-content .book-button {
     display: table;
     margin: 20px auto 0;
 }
+
 /* Expandable Ask Paws questions */
 #ask-paws {
     max-width: 950px;
     margin: 25px auto;
     padding: 25px 20px;
 }
+
 #ask-paws h2 {
     color: #315c16;
     font-size: 32px;
     text-align: center;
     margin: 0 0 12px;
 }
+
 #ask-paws>p {
     text-align: center;
 }
+
 #ask-paws details {
     margin: 12px 0;
     border: 2px solid #b6d58e;
     border-radius: 14px;
     background: white;
 }
+
 #ask-paws summary {
     padding: 18px;
     border-radius: 12px;
@@ -558,34 +645,42 @@ header.yard-header {
     font-weight: bold;
     cursor: pointer;
 }
+
 #ask-paws summary:hover {
     background: #f0f7e6;
 }
+
 #ask-paws details[open] {
     border-color: #4d8c0b;
 }
+
 #ask-paws details[open] summary {
     background: #edf6df;
 }
+
 #ask-paws details p {
     padding: 0 18px;
     font-size: 18px;
     line-height: 1.6;
 }
+
 #ask-paws a {
     font-weight: bold;
 }
+
 /* Footer */
 footer {
     text-align: center;
     padding: 30px 20px;
 }
+
 .footer-mascot {
     display: block;
     width: 100px;
     height: auto;
     margin: 0 auto 10px;
 }
+
 footer h3 {
     font-family: "Comic Sans MS", "Chalkboard SE", cursive;
     font-size: 30px;
@@ -594,68 +689,84 @@ footer h3 {
     line-height: 1.3;
     margin: 0 0 12px;
 }
+
 footer p {
     margin: 0;
     font-size: 18px;
     line-height: 1.6;
 }
+
 /* Phone and tablet layouts */
 @media (max-width: 700px) {
     #cleanup-mission {
         margin: 20px 12px;
         padding: 25px 18px;
     }
+
     .mission-options {
         grid-template-columns: 1fr;
     }
 }
+
 @media (max-width: 650px) {
     .yard-nav {
         flex-direction: column;
         gap: 10px;
     }
+
     .yard-logo {
         flex: 0 1 auto;
     }
+
     .yard-logo img {
         width: 300px;
     }
+
     .yard-banner {
         grid-template-columns: 1fr;
         padding: 25px 20px 8px;
         gap: 20px;
     }
+
     .yard-copy {
         text-align: center;
     }
+
     #talking-paws img {
         max-width: 300px;
         height: 250px;
     }
 }
+
 @media (max-width: 600px) {
+
     .services-grid,
     .pricing-extras {
         grid-template-columns: 1fr;
     }
+
     .pricing-table th,
     .pricing-table td {
         padding: 10px 6px;
     }
+
     .story-content {
         padding: 20px 16px;
     }
 }
+
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;
     }
 }
+
 .founders-photo {
     max-width: 420px;
     margin: 24px auto;
     text-align: center;
 }
+
 .founders-photo img {
     display: block;
     width: 100%;
@@ -664,17 +775,20 @@ footer p {
     border-radius: 20px;
     box-sizing: border-box;
 }
+
 .founders-photo figcaption {
     margin-top: 12px;
     font-size: 18px;
     line-height: 1.5;
     color: #315c16;
 }
+
 .peeking-paws {
     width: 180px;
     max-width: 220%;
     height: auto;
 }
+
 /* Subtle paw-print backgrounds */
 #home,
 #services,
@@ -684,11 +798,13 @@ footer p {
     background-color: #f7faef;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cg fill='%23315c16' opacity='.06' transform='translate(115 110) rotate(-20)'%3E%3Cellipse cx='0' cy='10' rx='14' ry='11'/%3E%3Cellipse cx='-17' cy='-5' rx='5' ry='7'/%3E%3Cellipse cx='-6' cy='-15' rx='5' ry='7'/%3E%3Cellipse cx='7' cy='-15' rx='5' ry='7'/%3E%3Cellipse cx='18' cy='-4' rx='5' ry='7'/%3E%3C/g%3E%3C/svg%3E");
 }
+
 /* Give alternating sections a slightly different shade */
 #services,
 #our-story {
     background-color: #edf5e3;
 }
+
 /* A playful backyard sign */
 .yard-sign {
     width: fit-content;
@@ -703,15 +819,18 @@ footer p {
     text-align: center;
     box-shadow: 4px 4px 0 #315c16;
 }
+
 .yard-sign strong {
     display: block;
     font-size: 22px;
 }
+
 .yard-sign span {
     display: block;
     margin-top: 6px;
     font-size: 17px;
 }
+
 #home,
 #services,
 #pricing,
@@ -720,6 +839,7 @@ footer p {
     background-image: none;
     background-color: #fffdf5;
 }
+
 #services,
 #our-story {
     background-color: #eef5e5;
@@ -728,47 +848,101 @@ footer p {
             #dcebc7 0%,
             transparent 65%);
 }
+
 #cleanup-mission {
     background-color: #e6f0d8;
 }
+
 #home,
 #pricing,
 #contact {
     background: #fff5df;
 }
+
 #services,
 #our-story {
     background: linear-gradient(135deg,
             #e8f3d8,
             #cfe5ad);
 }
+
 #cleanup-mission {
     background: #d7eabf;
 }
 
 
 /* Paws enters within the lawn header. */
-.yard-banner { overflow: hidden; }
-#paws-visitor .paws-bubble[hidden] { visibility: hidden; display: inline-block; }
-#paws-visitor .paws-bubble { max-width: 290px; }
-.paws-walk-stage { width: min(100%, 340px); aspect-ratio: 1; margin: 0 auto; }
+.yard-banner {
+    overflow: hidden;
+}
+
+#paws-visitor .paws-bubble[hidden] {
+    visibility: hidden;
+    display: inline-block;
+}
+
+#paws-visitor .paws-bubble {
+    max-width: 290px;
+}
+
+.paws-walk-stage {
+    width: min(100%, 340px);
+    aspect-ratio: 1;
+    margin: 0 auto;
+}
+
 .paws-visitor-sprite {
-  width: 100%; height: 100%;
-  background: url("images/paws-sprite.png") no-repeat;
-  background-size: 400% 300%;
-  background-position: 100% 100%;
+    width: 100%;
+    height: 100%;
+    background: url("images/paws-sprite.png") no-repeat;
+    background-size: 400% 300%;
+    background-position: 100% 100%;
 }
+
 .paws-visitor-sprite.paws-walking {
-  animation: paws-visitor-enter 2.4s linear both;
+    animation: paws-visitor-enter 3.5s linear both;
 }
-#talking-paws > span { margin-top: 0; }
+
+#talking-paws>span {
+    margin-top: 0;
+}
+
 @keyframes paws-visitor-enter {
-  from { transform: translateX(-110vw); }
-  to { transform: translateX(0); }
+    from {
+        transform: translateX(-110vw);
+    }
+
+    to {
+        transform: translateX(0);
+    }
 }
+
 @media (max-width: 600px) {
-  .paws-walk-stage { width: min(100%, 240px); }
+    .paws-walk-stage {
+        width: min(100%, 240px);
+    }
 }
+
 @media (prefers-reduced-motion: reduce) {
-  .paws-visitor-sprite.paws-walking { animation: none; }
+    .paws-visitor-sprite.paws-walking {
+        animation: none;
+    }
+}
+
+.paws-walk-stage {
+    position: relative;
+}
+
+.paws-visitor-sprite.paws-cleanup {
+    background-image: url("images/paws-cleanup.png");
+    background-size: 300% 100%;
+}
+
+.paws-pile {
+    position: absolute;
+    right: 18%;
+    bottom: 7%;
+    font-size: clamp(32px, 5vw, 48px);
+    line-height: 1;
+    pointer-events: none;
 }
